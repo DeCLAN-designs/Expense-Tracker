@@ -1,0 +1,145 @@
+
+/* Main Menu Styles */
+.main-menu {
+  background-color: #c4c4c4;
+  padding: 1rem 2rem;
+  width: 80%;
+  margin: auto;
+  height: 25px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+}
+
+/* Logo Styles */
+.logo {
+  height: 20px;
+  width: auto;
+  margin-right: 2rem; /* Space between logo and menu items */
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Navigation Container */
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center all items horizontally */
+  width: 100%;
+  height: 100%;
+}
+
+/* Menu List Styles */
+.menu-items ul {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: auto;
+  height: 100%;
+  align-items: center; /* Vertical centering */
+}
+
+/* Menu Items */
+.menu-items li {
+  margin: 0 1rem; /* Equal space on both sides */
+  position: relative;
+}
+
+/* Menu Links */
+.menu-items a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.menu-items a:hover {
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Buttons Container */
+.main-menu__buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto; /* Space between menu items and buttons */
+  align-items: center; /* Vertical centering */
+  ;
+}
+
+/* Button Styles */
+.sign-up, .login {
+  padding: 0.3rem 1rem; /* Smaller padding for compact design */
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  height: 25px; /* Match nav height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.sign-up:hover {
+  background-color: var(--accent-color);
+}
+
+.login {
+  background-color: transparent;
+  color: white;
+  border: var(--border);
+}
+
+.login:hover {
+  background-color: rgba(0, 102, 204, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-menu {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .menu-items {
+    flex-direction: column;
+  }
+
+  .menu-items ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .menu-items li {
+    margin: 0.5rem 0;
+  }
+
+  .main-menu__buttons {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,11 @@
+.expenses-chart {
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--primary-color);
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    height: 10rem;
+   
+  }
+  

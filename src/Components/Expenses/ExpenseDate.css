@@ -1,0 +1,30 @@
+.expense-date {
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    height: 5rem;
+    border-radius: var(--border-radius);
+    border: var(--border);
+    color: white;
+    
+    margin-right: 1rem; /* Add some spacing to the right of the date */
+  }
+  
+  .expense-date__day {
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    color: white;
+  }
+  
+  .expense-date__month {
+    font-size: 0.9rem;
+    color: white;
+     }
+  
+  .expense-date__year {
+    font-size: 0.9rem;
+    color: white;
+  }
+  
+  /* You can add more styling to adjust the appearance further */

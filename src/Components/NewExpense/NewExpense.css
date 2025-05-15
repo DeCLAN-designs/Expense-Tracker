@@ -1,0 +1,6 @@
+.new-expenses {
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+  max-width:var(--max-width);
+}
